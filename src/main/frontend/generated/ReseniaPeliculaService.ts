@@ -1,0 +1,11 @@
+import { EndpointRequestInit as EndpointRequestInit_1 } from "@vaadin/hilla-frontend";
+import type LinkedList_1 from "./com/unl/login/base/controller/data_struct/list/LinkedList.js";
+import type ReseniaPelicula_1 from "./com/unl/login/base/models/ReseniaPelicula.js";
+import client_1 from "./connect-client.default.js";
+async function actualizarResenia_1(id: number | undefined, contenido: string | undefined, puntuacion: number, init?: EndpointRequestInit_1): Promise<ReseniaPelicula_1 | undefined> { return client_1.call("ReseniaPeliculaService", "actualizarResenia", { id, contenido, puntuacion }, init); }
+async function crearResenia_1(idPelicula: number | undefined, contenido: string | undefined, puntuacion: number, autor: string | undefined, init?: EndpointRequestInit_1): Promise<ReseniaPelicula_1 | undefined> { return client_1.call("ReseniaPeliculaService", "crearResenia", { idPelicula, contenido, puntuacion, autor }, init); }
+async function eliminarResenia_1(id: number | undefined, usuarioActual: string | undefined, init?: EndpointRequestInit_1): Promise<boolean> { return client_1.call("ReseniaPeliculaService", "eliminarResenia", { id, usuarioActual }, init); }
+async function obtenerPuntuacionPromedio_1(idPelicula: number | undefined, init?: EndpointRequestInit_1): Promise<number> { return client_1.call("ReseniaPeliculaService", "obtenerPuntuacionPromedio", { idPelicula }, init); }
+async function obtenerReseniasDePelicula_1(idPelicula: number | undefined, init?: EndpointRequestInit_1): Promise<LinkedList_1<ReseniaPelicula_1 | undefined> | undefined> { return client_1.call("ReseniaPeliculaService", "obtenerReseniasDePelicula", { idPelicula }, init); }
+async function usuarioPuedeEliminar_1(idResenia: number | undefined, usuarioActual: string | undefined, init?: EndpointRequestInit_1): Promise<boolean> { return client_1.call("ReseniaPeliculaService", "usuarioPuedeEliminar", { idResenia, usuarioActual }, init); }
+export { actualizarResenia_1 as actualizarResenia, crearResenia_1 as crearResenia, eliminarResenia_1 as eliminarResenia, obtenerPuntuacionPromedio_1 as obtenerPuntuacionPromedio, obtenerReseniasDePelicula_1 as obtenerReseniasDePelicula, usuarioPuedeEliminar_1 as usuarioPuedeEliminar };

@@ -1,0 +1,17 @@
+import { EndpointRequestInit as EndpointRequestInit_1 } from "@vaadin/hilla-frontend";
+import type LinkedList_1 from "./com/unl/login/base/controller/data_struct/list/LinkedList.js";
+import type Persona_1 from "./com/unl/login/base/models/Persona.js";
+import client_1 from "./connect-client.default.js";
+async function delete_1(idPersona: number | undefined, init?: EndpointRequestInit_1): Promise<boolean | undefined> { return client_1.call("PersonaService", "delete", { idPersona }, init); }
+async function getPersonaById_1(id: number | undefined, init?: EndpointRequestInit_1): Promise<Record<string, string | undefined> | undefined> { return client_1.call("PersonaService", "getPersonaById", { id }, init); }
+async function getUserIdByEmail_1(email: string | undefined, init?: EndpointRequestInit_1): Promise<number | undefined> { return client_1.call("PersonaService", "getUserIdByEmail", { email }, init); }
+async function list_1(init?: EndpointRequestInit_1): Promise<LinkedList_1<Persona_1 | undefined> | undefined> { return client_1.call("PersonaService", "list", {}, init); }
+async function listAll_1(init?: EndpointRequestInit_1): Promise<Array<Record<string, unknown> | undefined> | undefined> { return client_1.call("PersonaService", "listAll", {}, init); }
+async function listPersona_1(init?: EndpointRequestInit_1): Promise<Array<Record<string, unknown> | undefined> | undefined> { return client_1.call("PersonaService", "listPersona", {}, init); }
+async function listaPersonas_1(init?: EndpointRequestInit_1): Promise<Array<Record<string, unknown> | undefined> | undefined> { return client_1.call("PersonaService", "listaPersonas", {}, init); }
+async function order_1(attribute: string | undefined, type: number | undefined, init?: EndpointRequestInit_1): Promise<Array<Record<string, string | undefined> | undefined> | undefined> { return client_1.call("PersonaService", "order", { attribute, type }, init); }
+async function save_1(usuario: string | undefined, correo: string | undefined, contrasenia: string | undefined, telefono: string | undefined, edad: number | undefined, init?: EndpointRequestInit_1): Promise<void> { return client_1.call("PersonaService", "save", { usuario, correo, contrasenia, telefono, edad }, init); }
+async function search_1(attribute: string | undefined, text: string | undefined, type: number | undefined, init?: EndpointRequestInit_1): Promise<Array<Record<string, string | undefined> | undefined> | undefined> { return client_1.call("PersonaService", "search", { attribute, text, type }, init); }
+async function update_1(idPersona: number | undefined, idCuenta: number | undefined, usuario: string | undefined, correo: string | undefined, contrasenia: string | undefined, telefono: string | undefined, edad: number | undefined, init?: EndpointRequestInit_1): Promise<void> { return client_1.call("PersonaService", "update", { idPersona, idCuenta, usuario, correo, contrasenia, telefono, edad }, init); }
+async function updateP_1(id: number | undefined, usuario: string | undefined, telefono: string | undefined, edad: number | undefined, init?: EndpointRequestInit_1): Promise<void> { return client_1.call("PersonaService", "updateP", { id, usuario, telefono, edad }, init); }
+export { delete_1 as delete, getPersonaById_1 as getPersonaById, getUserIdByEmail_1 as getUserIdByEmail, list_1 as list, listAll_1 as listAll, listaPersonas_1 as listaPersonas, listPersona_1 as listPersona, order_1 as order, save_1 as save, search_1 as search, update_1 as update, updateP_1 as updateP };

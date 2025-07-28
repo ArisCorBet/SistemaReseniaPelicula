@@ -1,0 +1,15 @@
+import { _getPropertyModel as _getPropertyModel_1, makeObjectEmptyValueCreator as makeObjectEmptyValueCreator_1, NumberModel as NumberModel_1, ObjectModel as ObjectModel_1, StringModel as StringModel_1 } from "@vaadin/hilla-lit-form";
+import type Director_1 from "./Director.js";
+class DirectorModel<T extends Director_1 = Director_1> extends ObjectModel_1<T> {
+    static override createEmptyValue = makeObjectEmptyValueCreator_1(DirectorModel);
+    get idDirector(): NumberModel_1 {
+        return this[_getPropertyModel_1]("idDirector", (parent, key) => new NumberModel_1(parent, key, true, { meta: { javaType: "java.lang.Integer" } }));
+    }
+    get nombre(): StringModel_1 {
+        return this[_getPropertyModel_1]("nombre", (parent, key) => new StringModel_1(parent, key, true, { meta: { javaType: "java.lang.String" } }));
+    }
+    get aniosCarrera(): NumberModel_1 {
+        return this[_getPropertyModel_1]("aniosCarrera", (parent, key) => new NumberModel_1(parent, key, false, { meta: { javaType: "int" } }));
+    }
+}
+export default DirectorModel;

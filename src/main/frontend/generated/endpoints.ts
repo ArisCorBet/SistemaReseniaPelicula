@@ -1,0 +1,11 @@
+import * as ActorService_1 from "./ActorService.js";
+import * as CuentaService_1 from "./CuentaService.js";
+import * as DirectorService_1 from "./DirectorService.js";
+import * as GeneroPeliculaService_1 from "./GeneroPeliculaService.js";
+import * as GeneroService_1 from "./GeneroService.js";
+import * as PeliculaService_1 from "./PeliculaService.js";
+import * as PersonaService_1 from "./PersonaService.js";
+import * as ResenaService_1 from "./ResenaService.js";
+import * as ReseniaPeliculaService_1 from "./ReseniaPeliculaService.js";
+import * as TaskService_1 from "./TaskService.js";
+export { ActorService_1 as ActorService, CuentaService_1 as CuentaService, DirectorService_1 as DirectorService, GeneroPeliculaService_1 as GeneroPeliculaService, GeneroService_1 as GeneroService, PeliculaService_1 as PeliculaService, PersonaService_1 as PersonaService, ResenaService_1 as ResenaService, ReseniaPeliculaService_1 as ReseniaPeliculaService, TaskService_1 as TaskService };

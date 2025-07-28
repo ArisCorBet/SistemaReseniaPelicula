@@ -1,0 +1,138 @@
+[
+  {
+    "route": "",
+    "loginRequired": true,
+    "flowLayout": false,
+    "params": {},
+    "title": "Main Layout",
+    "children": [
+      {
+        "route": "",
+        "menu": {
+          "exclude": true
+        },
+        "flowLayout": false,
+        "params": {},
+        "title": "Main"
+      },
+      {
+        "route": "actor",
+        "params": {},
+        "children": [
+          {
+            "route": "ActorView",
+            "title": "Actores",
+            "menu": {
+              "icon": "vaadin:hands-up",
+              "order": 1,
+              "title": "Actores"
+            },
+            "flowLayout": false,
+            "params": {}
+          }
+        ]
+      },
+      {
+        "route": "director",
+        "params": {},
+        "children": [
+          {
+            "route": "DirectorView",
+            "title": "Directores",
+            "menu": {
+              "icon": "vaadin:book",
+              "order": 1,
+              "title": "Directores"
+            },
+            "flowLayout": false,
+            "params": {}
+          }
+        ]
+      },
+      {
+        "route": "genero",
+        "params": {},
+        "children": [
+          {
+            "route": "GeneroView",
+            "title": "Gestion Generos",
+            "menu": {
+              "icon": "vaadin:file-movie",
+              "order": 1,
+              "title": "Gestion Generos"
+            },
+            "flowLayout": false,
+            "params": {}
+          }
+        ]
+      },
+      {
+        "route": "login",
+        "skipLayouts": true,
+        "menu": {
+          "exclude": true
+        },
+        "flowLayout": false,
+        "params": {},
+        "title": "Login"
+      },
+      {
+        "route": "pelicula",
+        "params": {},
+        "children": [
+          {
+            "route": "PeliculaView",
+            "title": "Gestion Peliculas",
+            "menu": {
+              "icon": "vaadin:film",
+              "order": 1,
+              "title": "Gestion Peliculas"
+            },
+            "flowLayout": false,
+            "params": {}
+          }
+        ]
+      },
+      {
+        "route": "PerfilView",
+        "menu": {
+          "icon": "vaadin:user",
+          "title": "Mi Perfil",
+          "order": 1
+        },
+        "flowLayout": false,
+        "params": {},
+        "title": "Profile"
+      },
+      {
+        "route": "resenia",
+        "params": {},
+        "children": [
+          {
+            "route": "ReseniaView",
+            "flowLayout": false,
+            "params": {},
+            "title": "Resenia"
+          }
+        ]
+      },
+      {
+        "route": "Usuario",
+        "params": {},
+        "children": [
+          {
+            "route": "UsuarioView",
+            "title": "Registro de personas",
+            "menu": {
+              "icon": "vaadin:users",
+              "order": 1,
+              "title": "Registro de personas"
+            },
+            "flowLayout": false,
+            "params": {}
+          }
+        ]
+      }
+    ]
+  }
+]
